@@ -1,6 +1,3 @@
 web-ext-artifacts/
 panel/unused/
-panel/bootstrap.css
-panel/bootstrap.js
-panel/jquery.js
-panel/popper.js
+panel/lib/
