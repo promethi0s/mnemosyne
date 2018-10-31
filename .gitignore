@@ -1,2 +1,7 @@
 /web-ext-artifacts
 /test-sites
+/panel/unused
+/panel/bootstrap.css
+/panel/bootstrap.js
+/panel/jquery.js
+/panel/popper.js
