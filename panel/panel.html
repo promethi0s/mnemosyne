@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="panel.css" rel="stylesheet">
+
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <main role="main" class="container-fluid mt-3">
+        <form id="ticket-form">
+
+            <div class="form-group">
+                <label class="sr-only" for="mn-id">Ticket ID</label>
+                <div class="input-group">
+                    <select class="custom-select" id="mn-id"></select>
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary" id="copy-id"><i class="fa fa-copy"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="sr-only" for="mn-summary">Summary</label>
+                <input type="text" class="form-control" id="mn-summary" placeholder="Summary">
+            </div>
+
+            <div class="form-group">
+                <label class="sr-only" for="mn-company">Company</label>
+                <input type="text" class="form-control" id="mn-company" placeholder="Company">
+            </div>
+
+            <div class="form-group">
+                <div class="nav nav-tabs" id="mn-device-tabs"></div>
+                <div class="tab-content mt-2" id="mn-devices"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            New
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Rep Split</a>
+                            <a class="dropdown-item" href="#">Lifecycle</a>
+                            <a class="dropdown-item" href="#">Res Split</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        <i class="fa fa-angle-up"></i>
+                    </button>
+                </div>
+                <label class="sr-only" for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="sr-only" for="exampleFormControlTextarea1">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mn-alerts">
+            </div>
+
+        </form>
+    </main>
+
+    <script src="elementFactory.js"></script>
+    <script src="seedData.js"></script>
+    <script src="panel.js"></script>
+</body>
+
+</html>
