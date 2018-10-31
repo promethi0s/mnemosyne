@@ -1,3 +1,1 @@
-# Mnemosyne
-
-In progress.# mnemosyne
+# mnemosyne
