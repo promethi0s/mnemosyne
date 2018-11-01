@@ -70,14 +70,9 @@ function addDevice(device, index) {
 
     device.alarms.forEach(alarm => {
 
-        if (alarm.impacting) {
-            trFault = ' class="alert-danger"';
-            tdFault = ' class="alert-link"';
-        } else {
-            trFault = '';
-            tdFault = '';
-        }
-
+        trFault = alarm.impacting ? ' class="alert-danger"' : '';
+        tdFault = alarm.impacting ? ' class="alert-link"' : '';
+        
         html +=
                 '<tr' + trFault + '>\
                     <td>' + alarm.start + '</td>\
